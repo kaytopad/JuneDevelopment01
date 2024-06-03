@@ -16,15 +16,15 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         ////左へ移動
-        //if (Input.GetKeyDown(KeyCode.LeftArrow))
-        //{
-        //    transform.Translate(-3, 0, 0);
-        //}
+        if (Input.GetKeyDown(KeyCode.LeftArrow))
+        {
+            transform.Translate(-3, 0, 0);
+        }
         ////右へ移動
-        //if (Input.GetKeyDown(KeyCode.RightArrow))
-        //{
-        //    transform.Translate(3, 0, 0);
-        //}
+        if (Input.GetKeyDown(KeyCode.RightArrow))
+        {
+            transform.Translate(3, 0, 0);
+        }
 
         //ゲームオーバーならプレイヤーを消す
         if (GameObject.Find("GameDirector").GetComponent<GameDirector>().IsGameOver())
